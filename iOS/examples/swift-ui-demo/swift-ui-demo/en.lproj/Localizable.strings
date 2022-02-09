@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  swift-ui-demo
+
+  Created by Kefei Qian on 2022/2/9.
+  
+*/
+
+"hello-title" = "Hello, World!";
+
+"name %@" = "My name is %@";

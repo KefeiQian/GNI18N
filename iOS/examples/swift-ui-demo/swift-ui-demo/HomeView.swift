@@ -7,13 +7,35 @@
 
 import SwiftUI
 
+class LocalizedText: GNText {
+    @Published var helloTitle:String!
+    @Published var nameText:String!
+    
+    override init() {
+        super.init()
+        self.updateText()
+    }
+    
+    override func updateText() {
+        self.helloTitle = GNI18N.getLocalizedText(key: "hello-title")
+        self.nameText = GNI18N.getLocalizedText(key: "name %@", table: nil, arguments: name)
+    }
+}
+
+let name = "KQ"
+
 struct HomeView: View {
+    @ObservedObject var text = LocalizedText()
+    
     var body: some View {
         VStack{
-            Text("Home").padding(50)
+            Text(text.helloTitle).padding(20)
+            
+            Text(text.nameText).padding(20)
             
             Button("Change Language") {
-                GNI18N.changeLanguage(lang: "en-us")
+                let cnZH = GNI18NLang(langName: "zh-Hans")
+                GNI18N.changeLanguage(lang: cnZH)
             }
         }
     }
@@ -21,6 +43,10 @@ struct HomeView: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        HomeView().environment(\.locale, .init(identifier: "en"))
+        
+        HomeView().environment(\.locale, .init(identifier: "zh-Hans"))
+        
+        HomeView().environment(\.locale, .init(identifier: "ja-JP"))
     }
 }

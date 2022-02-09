@@ -14,6 +14,11 @@
 		3355433427B265B9000F1AE5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3355433327B265B9000F1AE5 /* HomeView.swift */; };
 		3355433627B266D5000F1AE5 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3355433527B266D5000F1AE5 /* ProfileView.swift */; };
 		3355433827B26A46000F1AE5 /* GNI18N.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3355433727B26A45000F1AE5 /* GNI18N.swift */; };
+		3355433B27B34188000F1AE5 /* GNProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3355433A27B34188000F1AE5 /* GNProtocols.swift */; };
+		3355433D27B34B4C000F1AE5 /* GNConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3355433C27B34B4C000F1AE5 /* GNConstants.swift */; };
+		3355434027B36295000F1AE5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3355434227B36295000F1AE5 /* Localizable.strings */; };
+		3355434627B37362000F1AE5 /* GNExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3355434527B37362000F1AE5 /* GNExtensions.swift */; };
+		3355434827B3B706000F1AE5 /* GNText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3355434727B3B706000F1AE5 /* GNText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +30,13 @@
 		3355433327B265B9000F1AE5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		3355433527B266D5000F1AE5 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		3355433727B26A45000F1AE5 /* GNI18N.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNI18N.swift; sourceTree = "<group>"; };
+		3355433A27B34188000F1AE5 /* GNProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNProtocols.swift; sourceTree = "<group>"; };
+		3355433C27B34B4C000F1AE5 /* GNConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNConstants.swift; sourceTree = "<group>"; };
+		3355434127B36295000F1AE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3355434327B362B5000F1AE5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		3355434427B3635F000F1AE5 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3355434527B37362000F1AE5 /* GNExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNExtensions.swift; sourceTree = "<group>"; };
+		3355434727B3B706000F1AE5 /* GNText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,13 +69,14 @@
 		3355432427B26170000F1AE5 /* swift-ui-demo */ = {
 			isa = PBXGroup;
 			children = (
+				3355434227B36295000F1AE5 /* Localizable.strings */,
+				3355433927B34165000F1AE5 /* GNI18N */,
 				3355432527B26170000F1AE5 /* swift_ui_demoApp.swift */,
 				3355432727B26170000F1AE5 /* ContentView.swift */,
 				3355432927B26172000F1AE5 /* Assets.xcassets */,
 				3355432B27B26172000F1AE5 /* Preview Content */,
 				3355433327B265B9000F1AE5 /* HomeView.swift */,
 				3355433527B266D5000F1AE5 /* ProfileView.swift */,
-				3355433727B26A45000F1AE5 /* GNI18N.swift */,
 			);
 			path = "swift-ui-demo";
 			sourceTree = "<group>";
@@ -74,6 +87,18 @@
 				3355432C27B26172000F1AE5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3355433927B34165000F1AE5 /* GNI18N */ = {
+			isa = PBXGroup;
+			children = (
+				3355433727B26A45000F1AE5 /* GNI18N.swift */,
+				3355433A27B34188000F1AE5 /* GNProtocols.swift */,
+				3355433C27B34B4C000F1AE5 /* GNConstants.swift */,
+				3355434527B37362000F1AE5 /* GNExtensions.swift */,
+				3355434727B3B706000F1AE5 /* GNText.swift */,
+			);
+			path = GNI18N;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +143,8 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
+				ja,
 			);
 			mainGroup = 3355431927B26170000F1AE5;
 			productRefGroup = 3355432327B26170000F1AE5 /* Products */;
@@ -135,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3355432D27B26172000F1AE5 /* Preview Assets.xcassets in Resources */,
+				3355434027B36295000F1AE5 /* Localizable.strings in Resources */,
 				3355432A27B26172000F1AE5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,13 +176,31 @@
 			files = (
 				3355433827B26A46000F1AE5 /* GNI18N.swift in Sources */,
 				3355433627B266D5000F1AE5 /* ProfileView.swift in Sources */,
+				3355434827B3B706000F1AE5 /* GNText.swift in Sources */,
+				3355433D27B34B4C000F1AE5 /* GNConstants.swift in Sources */,
+				3355434627B37362000F1AE5 /* GNExtensions.swift in Sources */,
 				3355433427B265B9000F1AE5 /* HomeView.swift in Sources */,
 				3355432827B26170000F1AE5 /* ContentView.swift in Sources */,
+				3355433B27B34188000F1AE5 /* GNProtocols.swift in Sources */,
 				3355432627B26170000F1AE5 /* swift_ui_demoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3355434227B36295000F1AE5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3355434127B36295000F1AE5 /* en */,
+				3355434327B362B5000F1AE5 /* zh-Hans */,
+				3355434427B3635F000F1AE5 /* ja */,
+			);
+			name = Localizable.strings;
+			path = "swift-ui-demo";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3355432E27B26172000F1AE5 /* Debug */ = {
