@@ -8,5 +8,5 @@
 import Foundation
 
 struct GNConstants {
-    static let DEFAULT_LANG = GNI18NLang(langName: Locale.current.languageCode ?? "en-us")
+    static let DEFAULT_LANG = GNI18NLang(langName: Locale.autoupdatingCurrent.languageCode ?? Locale.current.languageCode ?? "en")
 }

@@ -10,7 +10,7 @@ import Foundation
 
 public struct GNI18NLang: Hashable {
     let name: String
-    
+
     init(langName: String) {
         self.name = langName
     }
@@ -18,5 +18,5 @@ public struct GNI18NLang: Hashable {
 
 public struct GNI18NOptions {
     var lang = GNConstants.DEFAULT_LANG
-    
+
 }
