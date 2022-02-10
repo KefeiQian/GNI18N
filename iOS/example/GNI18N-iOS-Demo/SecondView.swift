@@ -4,7 +4,6 @@
 
 import SwiftUI
 
-
 fileprivate class SecondViewText: GNText {
     @Published var changeLanguageText: String!
     @Published var secondViewTitle: String!

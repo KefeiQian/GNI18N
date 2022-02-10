@@ -23,6 +23,7 @@
 		336348A827B4F7E000355694 /* GNI18N.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336348A327B4F7E000355694 /* GNI18N.swift */; };
 		336348A927B4F7E000355694 /* GNProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336348A427B4F7E000355694 /* GNProtocols.swift */; };
 		336348AE27B4F84D00355694 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 336348AC27B4F84D00355694 /* Localizable.strings */; };
+		BA82CB560526A86466001881 /* dist in Resources */ = {isa = PBXBuildFile; fileRef = BA82CDFBB7FFE0DFAC39E00B /* dist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		336348AD27B4F84D00355694 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		336348AF27B4F85A00355694 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		336348B027B4F86300355694 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BA82CDFBB7FFE0DFAC39E00B /* dist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; name = dist; path = "Web/gn-i18n-vue-demo/dist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				3363487C27B4F71F00355694 /* ContentView.swift */,
 				3363487E27B4F72100355694 /* Assets.xcassets */,
 				3363488027B4F72100355694 /* Preview Content */,
+				BA82CDFBB7FFE0DFAC39E00B /* dist */,
 			);
 			path = "GNI18N-iOS-Demo";
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 				3363489527B4F77B00355694 /* Preview Content in Resources */,
 				3363488227B4F72100355694 /* Preview Assets.xcassets in Resources */,
 				3363487F27B4F72100355694 /* Assets.xcassets in Resources */,
+				BA82CB560526A86466001881 /* dist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,15 +20,15 @@ fileprivate class WebViewText: GNText {
     }
 }
 
-struct WebView : UIViewRepresentable {
-    var html: String
+struct WebView: UIViewRepresentable {
+    var url: URL
 
-    func makeUIView(context: Context) -> WKWebView  {
+    func makeUIView(context: Context) -> WKWebView {
         return WKWebView()
     }
 
     func updateUIView(_ webView: WKWebView, context: Context) {
-        webView.loadHTMLString(html, baseURL:  nil)
+        webView.load(URLRequest(url: self.url))
     }
 
 }
@@ -37,7 +37,7 @@ struct WebpageView: View {
     @ObservedObject fileprivate var text = WebViewText()
 
     var body: some View {
-        WebView(html: "<html><body>hi</body></html>")
+        WebView(url: Bundle.main.url(forResource: "index", withExtension: "html", subdirectory: "dist")!)
                 .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
                 .edgesIgnoringSafeArea(.all)
     }
