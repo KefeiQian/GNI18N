@@ -12,7 +12,7 @@ import androidx.navigation.ui.NavigationUI;
 
 import cc.daydreamqian.android_demo.databinding.ActivityMainBinding;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     private ActivityMainBinding binding;
 
