@@ -23,7 +23,7 @@
 		336348A827B4F7E000355694 /* GNI18N.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336348A327B4F7E000355694 /* GNI18N.swift */; };
 		336348A927B4F7E000355694 /* GNProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336348A427B4F7E000355694 /* GNProtocols.swift */; };
 		336348AE27B4F84D00355694 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 336348AC27B4F84D00355694 /* Localizable.strings */; };
-		BA82CB560526A86466001881 /* dist in Resources */ = {isa = PBXBuildFile; fileRef = BA82CDFBB7FFE0DFAC39E00B /* dist */; };
+		E07FD2792AA465EE080672F7 /* Pods_GNI18N_iOS_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C10216776D0BCD456B5AA1F /* Pods_GNI18N_iOS_Demo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,7 +46,9 @@
 		336348AD27B4F84D00355694 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		336348AF27B4F85A00355694 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		336348B027B4F86300355694 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		BA82CDFBB7FFE0DFAC39E00B /* dist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; name = dist; path = "Web/gn-i18n-vue-demo/dist"; sourceTree = SOURCE_ROOT; };
+		3C10216776D0BCD456B5AA1F /* Pods_GNI18N_iOS_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GNI18N_iOS_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84827662495A02408A85B5EF /* Pods-GNI18N-iOS-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNI18N-iOS-Demo.debug.xcconfig"; path = "Target Support Files/Pods-GNI18N-iOS-Demo/Pods-GNI18N-iOS-Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		CED425752AA97CBBF9F2313F /* Pods-GNI18N-iOS-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNI18N-iOS-Demo.release.xcconfig"; path = "Target Support Files/Pods-GNI18N-iOS-Demo/Pods-GNI18N-iOS-Demo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,17 +56,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E07FD2792AA465EE080672F7 /* Pods_GNI18N_iOS_Demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1154B10A4261A32330FD35BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C10216776D0BCD456B5AA1F /* Pods_GNI18N_iOS_Demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3363486E27B4F71F00355694 = {
 			isa = PBXGroup;
 			children = (
 				3363487927B4F71F00355694 /* GNI18N-iOS-Demo */,
 				3363487827B4F71F00355694 /* Products */,
+				BF0D158FDE853E713DF0FDA4 /* Pods */,
+				1154B10A4261A32330FD35BA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,7 +104,6 @@
 				3363487C27B4F71F00355694 /* ContentView.swift */,
 				3363487E27B4F72100355694 /* Assets.xcassets */,
 				3363488027B4F72100355694 /* Preview Content */,
-				BA82CDFBB7FFE0DFAC39E00B /* dist */,
 			);
 			path = "GNI18N-iOS-Demo";
 			sourceTree = "<group>";
@@ -116,6 +128,15 @@
 			path = GNI18N;
 			sourceTree = "<group>";
 		};
+		BF0D158FDE853E713DF0FDA4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				84827662495A02408A85B5EF /* Pods-GNI18N-iOS-Demo.debug.xcconfig */,
+				CED425752AA97CBBF9F2313F /* Pods-GNI18N-iOS-Demo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -123,9 +144,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3363488527B4F72100355694 /* Build configuration list for PBXNativeTarget "GNI18N-iOS-Demo" */;
 			buildPhases = (
+				0C084C5975F248CD613BDCAC /* [CP] Check Pods Manifest.lock */,
 				3363487327B4F71F00355694 /* Sources */,
 				3363487427B4F71F00355694 /* Frameworks */,
 				3363487527B4F71F00355694 /* Resources */,
+				02012A8B6B94967C316AA69C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -159,6 +182,7 @@
 				en,
 				"zh-Hans",
 				ja,
+				Base,
 			);
 			mainGroup = 3363486E27B4F71F00355694;
 			productRefGroup = 3363487827B4F71F00355694 /* Products */;
@@ -179,11 +203,52 @@
 				3363489527B4F77B00355694 /* Preview Content in Resources */,
 				3363488227B4F72100355694 /* Preview Assets.xcassets in Resources */,
 				3363487F27B4F72100355694 /* Assets.xcassets in Resources */,
-				BA82CB560526A86466001881 /* dist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02012A8B6B94967C316AA69C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GNI18N-iOS-Demo/Pods-GNI18N-iOS-Demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GNI18N-iOS-Demo/Pods-GNI18N-iOS-Demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GNI18N-iOS-Demo/Pods-GNI18N-iOS-Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0C084C5975F248CD613BDCAC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GNI18N-iOS-Demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3363487327B4F71F00355694 /* Sources */ = {
@@ -339,6 +404,7 @@
 		};
 		3363488627B4F72100355694 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84827662495A02408A85B5EF /* Pods-GNI18N-iOS-Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -367,6 +433,7 @@
 		};
 		3363488727B4F72100355694 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CED425752AA97CBBF9F2313F /* Pods-GNI18N-iOS-Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
