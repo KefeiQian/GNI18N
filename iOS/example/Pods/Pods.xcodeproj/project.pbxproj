@@ -33,7 +33,7 @@
 		05316337F3F1873269DD931944A19CD0 /* WKWebViewJavascriptBridgeBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WKWebViewJavascriptBridgeBase.swift; path = WKWebViewJavascriptBridge/WKWebViewJavascriptBridgeBase.swift; sourceTree = "<group>"; };
 		06183285CF5E4C3B37A52D06191D6FEB /* WKWebViewJavascriptBridge-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WKWebViewJavascriptBridge-umbrella.h"; sourceTree = "<group>"; };
 		0FC9BEF83E631EF007DD49F956405F36 /* WKWebViewJavascriptBridge.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WKWebViewJavascriptBridge.modulemap; sourceTree = "<group>"; };
-		1D6AF204BFCBE82BACA6A7034F83C74D /* Pods_GNI18N_iOS_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GNI18N_iOS_Demo.framework; path = "Pods-GNI18N-iOS-Demo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6AF204BFCBE82BACA6A7034F83C74D /* Pods_GNI18N_iOS_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GNI18N_iOS_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23C2D74D38F05F69665192CE8E5820D0 /* Pods-GNI18N-iOS-Demo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GNI18N-iOS-Demo-dummy.m"; sourceTree = "<group>"; };
 		25D7A1329A9A3E3914A3C836792F006F /* Pods-GNI18N-iOS-Demo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GNI18N-iOS-Demo-umbrella.h"; sourceTree = "<group>"; };
 		27F9ADAE872D58CCA433F8F6B8AA8F29 /* WKWebViewJavascriptBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WKWebViewJavascriptBridge.h; path = WKWebViewJavascriptBridge/WKWebViewJavascriptBridge.h; sourceTree = "<group>"; };
@@ -47,9 +47,9 @@
 		6D9E2193381AEA6F6D172F9E3E90A19E /* WKWebViewJavascriptBridge-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WKWebViewJavascriptBridge-dummy.m"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		9B8DD812A0F698C16E5488E6DD96CE3D /* WKWebViewJavascriptBridge-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WKWebViewJavascriptBridge-prefix.pch"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A78859A8C6F734243C0B82F8104DAA3B /* WKWebViewJavascriptBridge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WKWebViewJavascriptBridge.release.xcconfig; sourceTree = "<group>"; };
-		BB2F1AD74878B6075B302472128BB20B /* WKWebViewJavascriptBridge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WKWebViewJavascriptBridge.framework; path = WKWebViewJavascriptBridge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB2F1AD74878B6075B302472128BB20B /* WKWebViewJavascriptBridge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WKWebViewJavascriptBridge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8D6E28C3A770EC893419A456395DA72 /* Pods-GNI18N-iOS-Demo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GNI18N-iOS-Demo-Info.plist"; sourceTree = "<group>"; };
 		E183CC02D7509342C5AB2661884AFEEF /* WKWebViewJavascriptBridgeJS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WKWebViewJavascriptBridgeJS.swift; path = WKWebViewJavascriptBridge/WKWebViewJavascriptBridgeJS.swift; sourceTree = "<group>"; };
 		EA5A2BF720A7390C7E44F9370BCB8A75 /* WKWebViewJavascriptBridge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WKWebViewJavascriptBridge.swift; path = WKWebViewJavascriptBridge/WKWebViewJavascriptBridge.swift; sourceTree = "<group>"; };
@@ -133,7 +133,6 @@
 				E183CC02D7509342C5AB2661884AFEEF /* WKWebViewJavascriptBridgeJS.swift */,
 				490081A914467660E458D0C803D26C91 /* Support Files */,
 			);
-			name = WKWebViewJavascriptBridge;
 			path = WKWebViewJavascriptBridge;
 			sourceTree = "<group>";
 		};
@@ -240,7 +239,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1320;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 13.0";
@@ -363,7 +362,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/WKWebViewJavascriptBridge/WKWebViewJavascriptBridge-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/WKWebViewJavascriptBridge/WKWebViewJavascriptBridge-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -526,7 +525,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/WKWebViewJavascriptBridge/WKWebViewJavascriptBridge-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/WKWebViewJavascriptBridge/WKWebViewJavascriptBridge-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

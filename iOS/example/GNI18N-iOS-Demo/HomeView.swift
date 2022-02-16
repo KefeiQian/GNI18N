@@ -9,51 +9,51 @@ import SwiftUI
 
 let name = "KQ"
 
-fileprivate class HomeViewText: GNText {
-    @Published var helloTitle: String!
-    @Published var nameText: String!
-    @Published var changeLanguageText: String!
+private class HomeViewText: GNText {
+  @Published var helloTitle: String!
+  @Published var nameText: String!
+  @Published var changeLanguageText: String!
 
+  override init() {
+    super.init()
+    self.updateText()
+  }
 
-    override init() {
-        super.init()
-        self.updateText()
-    }
-
-    override func updateText() {
-        self.helloTitle = GNI18N.getLocalizedText(key: "hello-title")
-        self.nameText = String.localizedStringWithFormat(GNI18N.getLocalizedText(key: "name %@"), name)
-        self.changeLanguageText = GNI18N.getLocalizedText(key: "change-language-button")
-    }
+  override func updateText() {
+    self.helloTitle = GNI18N.shared.getLocalizedText(key: "hello-title")
+    self.nameText = String.localizedStringWithFormat(
+      GNI18N.shared.getLocalizedText(key: "name %@"), name)
+    self.changeLanguageText = GNI18N.shared.getLocalizedText(key: "change-language-button")
+  }
 }
 
 struct HomeView: View {
-    @ObservedObject fileprivate var text = HomeViewText()
+  @ObservedObject fileprivate var text = HomeViewText()
 
-    var body: some View {
-        NavigationView {
-            VStack(alignment: .center) {
-                Text(text.helloTitle).padding(20)
+  var body: some View {
+    NavigationView {
+      VStack(alignment: .center) {
+        Text(text.helloTitle).padding(20)
 
-                Text(text.nameText).padding(20)
+        Text(text.nameText).padding(20)
 
-                Button(text.changeLanguageText) {
-                    GNI18N.changeLanguage(lang: getRandomLangExceptCurrentLang())
-                }
-                        .padding(20)
-            }
-                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
-                    .edgesIgnoringSafeArea(.all)
+        Button(text.changeLanguageText) {
+          GNI18N.shared.changeLanguage(lang: getRandomLangExceptCurrentLang())
         }
+        .padding(20)
+      }
+      .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+      .edgesIgnoringSafeArea(.all)
     }
+  }
 }
 
 struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeView().environment(\.locale, .init(identifier: "en"))
+  static var previews: some View {
+    HomeView().environment(\.locale, .init(identifier: "en"))
 
-        HomeView().environment(\.locale, .init(identifier: "zh-Hans"))
+    HomeView().environment(\.locale, .init(identifier: "zh-Hans"))
 
-        HomeView().environment(\.locale, .init(identifier: "ja-JP"))
-    }
+    HomeView().environment(\.locale, .init(identifier: "ja-JP"))
+  }
 }

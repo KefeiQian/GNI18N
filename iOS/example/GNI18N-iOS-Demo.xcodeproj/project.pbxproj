@@ -23,6 +23,7 @@
 		336348A827B4F7E000355694 /* GNI18N.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336348A327B4F7E000355694 /* GNI18N.swift */; };
 		336348A927B4F7E000355694 /* GNProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336348A427B4F7E000355694 /* GNProtocols.swift */; };
 		336348AE27B4F84D00355694 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 336348AC27B4F84D00355694 /* Localizable.strings */; };
+		338D08AE27BCE3650024CE4F /* dist in Resources */ = {isa = PBXBuildFile; fileRef = 338D08AD27BCE3650024CE4F /* dist */; };
 		E07FD2792AA465EE080672F7 /* Pods_GNI18N_iOS_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C10216776D0BCD456B5AA1F /* Pods_GNI18N_iOS_Demo.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		336348AD27B4F84D00355694 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		336348AF27B4F85A00355694 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		336348B027B4F86300355694 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		338D08AD27BCE3650024CE4F /* dist */ = {isa = PBXFileReference; lastKnownFileType = folder; name = dist; path = "../../../Web/gn-i18n-vue-demo/dist"; sourceTree = "<group>"; };
 		3C10216776D0BCD456B5AA1F /* Pods_GNI18N_iOS_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GNI18N_iOS_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84827662495A02408A85B5EF /* Pods-GNI18N-iOS-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNI18N-iOS-Demo.debug.xcconfig"; path = "Target Support Files/Pods-GNI18N-iOS-Demo/Pods-GNI18N-iOS-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		CED425752AA97CBBF9F2313F /* Pods-GNI18N-iOS-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNI18N-iOS-Demo.release.xcconfig"; path = "Target Support Files/Pods-GNI18N-iOS-Demo/Pods-GNI18N-iOS-Demo.release.xcconfig"; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 		3363487927B4F71F00355694 /* GNI18N-iOS-Demo */ = {
 			isa = PBXGroup;
 			children = (
+				338D08AD27BCE3650024CE4F /* dist */,
 				336348AC27B4F84D00355694 /* Localizable.strings */,
 				3363489F27B4F7E000355694 /* GNI18N */,
 				3363489227B4F77B00355694 /* HomeView.swift */,
@@ -201,6 +204,7 @@
 			files = (
 				336348AE27B4F84D00355694 /* Localizable.strings in Resources */,
 				3363489527B4F77B00355694 /* Preview Content in Resources */,
+				338D08AE27BCE3650024CE4F /* dist in Resources */,
 				3363488227B4F72100355694 /* Preview Assets.xcassets in Resources */,
 				3363487F27B4F72100355694 /* Assets.xcassets in Resources */,
 			);

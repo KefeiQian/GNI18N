@@ -9,9 +9,9 @@ import SwiftUI
 
 @main
 struct GNI18N_iOS_DemoApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+  var body: some Scene {
+    WindowGroup {
+      ContentView()
     }
+  }
 }

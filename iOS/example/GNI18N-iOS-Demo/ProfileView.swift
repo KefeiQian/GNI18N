@@ -7,39 +7,38 @@
 
 import SwiftUI
 
+private class ProfileViewText: GNText {
+  @Published var profileTitle: String!
+  @Published var nextPage: String!
 
-fileprivate class ProfileViewText: GNText {
-    @Published var profileTitle: String!
-    @Published var nextPage: String!
+  override init() {
+    super.init()
+    self.updateText()
+  }
 
-    override init() {
-        super.init()
-        self.updateText()
-    }
-
-    override func updateText() {
-        self.nextPage = GNI18N.getLocalizedText(key: "next-page")
-        self.profileTitle = GNI18N.getLocalizedText(key: "profile-tab-title")
-    }
+  override func updateText() {
+    self.nextPage = GNI18N.shared.getLocalizedText(key: "next-page")
+    self.profileTitle = GNI18N.shared.getLocalizedText(key: "profile-tab-title")
+  }
 }
 
 struct ProfileView: View {
-    @ObservedObject fileprivate var text = ProfileViewText()
+  @ObservedObject fileprivate var text = ProfileViewText()
 
-    var body: some View {
-            VStack(alignment: .center) {
-                Text(text.profileTitle).padding(20)
+  var body: some View {
+    VStack(alignment: .center) {
+      Text(text.profileTitle).padding(20)
 
-                NavigationLink(destination: SecondView()) {
-                    Text(text.nextPage)
-                }.padding(20)
-            }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
-                    .edgesIgnoringSafeArea(.all)
-    }
+      NavigationLink(destination: SecondView()) {
+        Text(text.nextPage)
+      }.padding(20)
+    }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+      .edgesIgnoringSafeArea(.all)
+  }
 }
 
 struct ProfileView_Previews: PreviewProvider {
-    static var previews: some View {
-        ProfileView()
-    }
+  static var previews: some View {
+    ProfileView()
+  }
 }

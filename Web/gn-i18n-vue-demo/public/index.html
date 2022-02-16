@@ -15,10 +15,14 @@
           return window.WKWVJBCallbacks.push(callback);
         }
         window.WKWVJBCallbacks = [callback];
-        window.webkit.messageHandlers.iOS_Native_InjectJavascript.postMessage(
-          null
-        );
+        window.webkit &&
+          window.webkit.messageHandlers.iOS_Native_InjectJavascript.postMessage(
+            null
+          );
       }
+      window.setupWKWebViewJavascriptBridge((_bridge) => {
+        window.bridge = _bridge;
+      });
     </script>
   </head>
   <body>

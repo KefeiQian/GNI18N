@@ -8,5 +8,12 @@
 import Foundation
 
 struct GNConstants {
-    static let DEFAULT_LANG = GNI18NLang(langName: Locale.autoupdatingCurrent.languageCode ?? Locale.current.languageCode ?? "en")
+  static let DEFAULT_LANG = GNI18NLang(
+    langName: Locale.autoupdatingCurrent.languageCode ?? Locale.current.languageCode ?? "en")
+
+  static let LANG_KEY = "lang"
+  static let BRIDGE_KEY = "bridge"
+
+  static let CHANGE_LANGUAGE_NATIVE_BRIDGE_NAME = "changeLanguageNative"
+  static let CHANGE_LANGUAGE_WEB_BRIDGE_NAME = "changeLanguageWeb"
 }
