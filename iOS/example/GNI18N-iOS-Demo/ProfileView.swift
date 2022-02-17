@@ -17,8 +17,8 @@ private class ProfileViewText: GNText {
   }
 
   override func updateText() {
-    self.nextPage = GNI18N.shared.getLocalizedText(key: "next-page")
-    self.profileTitle = GNI18N.shared.getLocalizedText(key: "profile-tab-title")
+    self.nextPage = GNI18N.getLocalizedText(key: "next-page")
+    self.profileTitle = GNI18N.getLocalizedText(key: "profile-tab-title")
   }
 }
 
@@ -29,7 +29,7 @@ struct ProfileView: View {
     VStack(alignment: .center) {
       Text(text.profileTitle).padding(20)
 
-      NavigationLink(destination: SecondView()) {
+      NavigationLink(destination: NextPageView()) {
         Text(text.nextPage)
       }.padding(20)
     }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)

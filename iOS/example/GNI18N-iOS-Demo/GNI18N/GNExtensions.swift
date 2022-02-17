@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftyUserDefaults
 
 extension Notification.Name {
   static let GN_LANGUAGE_CHANGED = Notification.Name("GN_LANGUAGE_CHANGED")
@@ -38,5 +39,11 @@ extension Bundle {
     objc_setAssociatedObject(
       Bundle.main, &bundleKey, Bundle.main.path(forResource: language.name, ofType: "lproj"),
       .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+  }
+}
+
+extension DefaultsKeys {
+  var storedLanguage: DefaultsKey<GNI18NLang> {
+    .init("storedLanguage", defaultValue: GNConstants.DEFAULT_LANG)
   }
 }

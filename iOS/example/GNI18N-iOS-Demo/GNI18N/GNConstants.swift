@@ -16,4 +16,5 @@ struct GNConstants {
 
   static let CHANGE_LANGUAGE_NATIVE_BRIDGE_NAME = "changeLanguageNative"
   static let CHANGE_LANGUAGE_WEB_BRIDGE_NAME = "changeLanguageWeb"
+  static let GET_NATIVE_LANG_BRIDGE_NAME = "getNativeLanguage"
 }

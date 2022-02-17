@@ -18,9 +18,9 @@ private class ContentViewText: GNText {
   }
 
   override func updateText() {
-    self.homeTitle = GNI18N.shared.getLocalizedText(key: "home-tab-title")
-    self.profileTitle = GNI18N.shared.getLocalizedText(key: "profile-tab-title")
-    self.webpageTitle = GNI18N.shared.getLocalizedText(key: "webpage-tab-title")
+    self.homeTitle = GNI18N.getLocalizedText(key: "home-tab-title")
+    self.profileTitle = GNI18N.getLocalizedText(key: "profile-tab-title")
+    self.webpageTitle = GNI18N.getLocalizedText(key: "webpage-tab-title")
   }
 }
 

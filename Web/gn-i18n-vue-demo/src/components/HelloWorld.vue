@@ -7,7 +7,6 @@
 </template>
 
 <script>
-import GNI18NJSBridge from "../GNI18N/bridge";
 import GNI18N from "../GNI18N/index";
 
 export default {
@@ -15,17 +14,7 @@ export default {
   props: {
     msg: String,
   },
-  mounted() {
-    GNI18NJSBridge.register(
-      GNI18N.CONSTANTS.CHANGE_LANGUAGE_NATIVE_BRIDGE_NAME,
-      (data, responseCallback) => {
-        const { lang } = data;
-        this.$i18n.locale = lang;
-
-        responseCallback(`web change language to ${lang}`);
-      }
-    );
-  },
+  mounted() {},
   methods: {
     changeLanguage() {
       let currentLanguage = this.$i18n.locale;

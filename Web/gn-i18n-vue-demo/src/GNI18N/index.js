@@ -4,6 +4,7 @@ const GNI18N = {
   CONSTANTS: {
     CHANGE_LANGUAGE_NATIVE_BRIDGE_NAME: "changeLanguageNative",
     CHANGE_LANGUAGE_WEB_BRIDGE_NAME: "changeLanguageWeb",
+    GET_NATIVE_LANG_BRIDGE_NAME: "getNativeLanguage",
   },
   LANGUAGE: {
     CHINESE: { name: "中文", value: "zh-Hans" },

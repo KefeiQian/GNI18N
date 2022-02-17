@@ -17,8 +17,8 @@ private class WebViewText: GNText {
   }
 
   override func updateText() {
-    self.secondViewTitle = GNI18N.shared.getLocalizedText(key: "second-view-title")
-    self.changeLanguageText = GNI18N.shared.getLocalizedText(key: "change-language-button")
+    self.secondViewTitle = GNI18N.getLocalizedText(key: "second-view-title")
+    self.changeLanguageText = GNI18N.getLocalizedText(key: "change-language-button")
   }
 }
 
@@ -60,12 +60,12 @@ class _WebViewController: UIViewController {
 
     webView.frame = view.bounds
 
-    //        webView.load(URLRequest(url: URL(string: "http://localhost:8080")!))
-    webView.load(
-      URLRequest(
-        url: URL(
-          fileURLWithPath: Bundle.main.path(
-            forResource: "index", ofType: "html", inDirectory: "dist")!)))
+    webView.load(URLRequest(url: URL(string: "http://localhost:8080")!))
+    //    webView.load(
+    //      URLRequest(
+    //        url: URL(
+    //          fileURLWithPath: Bundle.main.path(
+    //            forResource: "index", ofType: "html", inDirectory: "dist")!)))
 
     view.addSubview(webView)
 

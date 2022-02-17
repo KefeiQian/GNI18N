@@ -20,10 +20,10 @@ private class HomeViewText: GNText {
   }
 
   override func updateText() {
-    self.helloTitle = GNI18N.shared.getLocalizedText(key: "hello-title")
+    self.helloTitle = GNI18N.getLocalizedText(key: "hello-title")
     self.nameText = String.localizedStringWithFormat(
-      GNI18N.shared.getLocalizedText(key: "name %@"), name)
-    self.changeLanguageText = GNI18N.shared.getLocalizedText(key: "change-language-button")
+      GNI18N.getLocalizedText(key: "name %@"), name)
+    self.changeLanguageText = GNI18N.getLocalizedText(key: "change-language-button")
   }
 }
 

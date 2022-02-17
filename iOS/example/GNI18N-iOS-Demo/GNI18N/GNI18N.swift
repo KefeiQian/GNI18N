@@ -6,22 +6,33 @@
 //
 
 import Foundation
+import SwiftyUserDefaults
 import WKWebViewJavascriptBridge
 import WebKit
 
 public class GNI18N {
   public static let shared = GNI18N()
 
-  public private(set) var currentLang: GNI18NLang = GNConstants.DEFAULT_LANG
+  public private(set) var currentLang: GNI18NLang
 
   private var bridges = [WKWebViewJavascriptBridge]()
 
   private var hasSetWebviewNotification = false
 
-  private init() {}
+  private init() {
+    print(Defaults[\.storedLanguage])
+    self.currentLang = Defaults[\.storedLanguage]
+  }
+
+  public static func setup() {
+    if shared.currentLang != GNConstants.DEFAULT_LANG {
+      shared.changeLanguage(lang: shared.currentLang)
+    }
+  }
 
   public func changeLanguage(lang: GNI18NLang) {
     self.currentLang = lang
+    Defaults[\.storedLanguage] = currentLang
 
     Bundle.setLanguage(lang)
 
@@ -29,16 +40,17 @@ public class GNI18N {
       name: .GN_LANGUAGE_CHANGED, object: nil, userInfo: [GNConstants.LANG_KEY: lang])
   }
 
-  public func getLocalizedText(key: String) -> String {
+  public static func getLocalizedText(key: String) -> String {
     return Bundle.main.localizedString(forKey: key, value: nil, table: nil)
   }
 
-  public func getLocalizedText(key: String, table tableName: String? = nil) -> String {
+  public static func getLocalizedText(key: String, table tableName: String? = nil) -> String {
     return Bundle.main.localizedString(forKey: key, value: nil, table: tableName)
   }
 
   public func bindWebview(_ webView: WKWebView) -> WKWebViewJavascriptBridge {
     let bridge = WKWebViewJavascriptBridge(webView: webView)
+    //    bridge.isLogEnable = true
     self.bridges.append(bridge)
 
     if !self.hasSetWebviewNotification {
@@ -49,13 +61,17 @@ public class GNI18N {
     }
 
     bridge.register(handlerName: GNConstants.CHANGE_LANGUAGE_WEB_BRIDGE_NAME) {
-      (paramters, callback) in
-      guard let lang = paramters?[GNConstants.LANG_KEY] else {
+      (parameters, callback) in
+      guard let lang = parameters?[GNConstants.LANG_KEY] else {
         return
       }
       self.changeLanguage(lang: GNI18NLang.init(langName: lang as! String))
 
       callback?("Native language changed to \(lang)")
+    }
+
+    bridge.register(handlerName: GNConstants.GET_NATIVE_LANG_BRIDGE_NAME) { parameters, callback in
+      callback?(self.currentLang.name)
     }
 
     return bridge
