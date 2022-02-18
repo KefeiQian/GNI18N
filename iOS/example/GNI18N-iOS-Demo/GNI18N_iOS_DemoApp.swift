@@ -5,6 +5,7 @@
 //  Created by Kefei Qian on 2022/2/10.
 //
 
+import GNI18N
 import SwiftUI
 
 @main

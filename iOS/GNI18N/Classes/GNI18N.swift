@@ -5,7 +5,6 @@
 //  Created by Kefei Qian on 2022/2/8.
 //
 
-import Foundation
 import SwiftyUserDefaults
 import WKWebViewJavascriptBridge
 import WebKit
@@ -20,7 +19,6 @@ public class GNI18N {
   private var hasSetWebviewNotification = false
 
   private init() {
-    print(Defaults[\.storedLanguage])
     self.currentLang = Defaults[\.storedLanguage]
   }
 

@@ -10,7 +10,7 @@ import SwiftyUserDefaults
 public struct GNI18NLang: Hashable, Codable, Equatable, DefaultsSerializable {
   let name: String
 
-  init(langName: String) {
+  public init(langName: String) {
     self.name = langName
   }
 

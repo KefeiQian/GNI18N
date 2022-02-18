@@ -5,6 +5,7 @@
 //  Created by Kefei Qian on 2022/2/8.
 //
 
+import GNI18N
 import SwiftUI
 
 private class ProfileViewText: GNText {

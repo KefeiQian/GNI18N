@@ -2,8 +2,8 @@
 // Created by Kefei Qian on 2022/2/10.
 //
 
+import GNI18N
 import SwiftUI
-import UIKit
 import WKWebViewJavascriptBridge
 import WebKit
 
@@ -60,12 +60,12 @@ class _WebViewController: UIViewController {
 
     webView.frame = view.bounds
 
-    webView.load(URLRequest(url: URL(string: "http://localhost:8080")!))
-    //    webView.load(
-    //      URLRequest(
-    //        url: URL(
-    //          fileURLWithPath: Bundle.main.path(
-    //            forResource: "index", ofType: "html", inDirectory: "dist")!)))
+    //    webView.load(URLRequest(url: URL(string: "http://localhost:8080")!))
+    webView.load(
+      URLRequest(
+        url: URL(
+          fileURLWithPath: Bundle.main.path(
+            forResource: "index", ofType: "html", inDirectory: "dist")!)))
 
     view.addSubview(webView)
 

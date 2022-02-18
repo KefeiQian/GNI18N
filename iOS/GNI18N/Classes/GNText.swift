@@ -7,12 +7,13 @@
 
 import SwiftUI
 
-class GNText: ObservableObject {
-  init() {
+open class GNText: ObservableObject {
+  public init() {
     NotificationCenter.default.addObserver(
       self, selector: #selector(updateText), name: .GN_LANGUAGE_CHANGED, object: nil)
   }
 
-  @objc func updateText() {
+  @objc open func updateText() {
+    // override it
   }
 }

@@ -15,15 +15,10 @@
 		3363489427B4F77B00355694 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3363488927B4F77B00355694 /* ProfileView.swift */; };
 		3363489527B4F77B00355694 /* Preview Content in Resources */ = {isa = PBXBuildFile; fileRef = 3363488A27B4F77B00355694 /* Preview Content */; };
 		3363489827B4F77B00355694 /* WebpageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3363488D27B4F77B00355694 /* WebpageView.swift */; };
-		3363489C27B4F77B00355694 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3363489127B4F77B00355694 /* SecondView.swift */; };
+		3363489C27B4F77B00355694 /* NextPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3363489127B4F77B00355694 /* NextPageView.swift */; };
 		3363489D27B4F77B00355694 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3363489227B4F77B00355694 /* HomeView.swift */; };
-		336348A527B4F7E000355694 /* GNConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336348A027B4F7E000355694 /* GNConstants.swift */; };
-		336348A627B4F7E000355694 /* GNText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336348A127B4F7E000355694 /* GNText.swift */; };
-		336348A727B4F7E000355694 /* GNExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336348A227B4F7E000355694 /* GNExtensions.swift */; };
-		336348A827B4F7E000355694 /* GNI18N.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336348A327B4F7E000355694 /* GNI18N.swift */; };
-		336348A927B4F7E000355694 /* GNProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336348A427B4F7E000355694 /* GNProtocols.swift */; };
 		336348AE27B4F84D00355694 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 336348AC27B4F84D00355694 /* Localizable.strings */; };
-		338D08AE27BCE3650024CE4F /* dist in Resources */ = {isa = PBXBuildFile; fileRef = 338D08AD27BCE3650024CE4F /* dist */; };
+		33D767F927BF3057004D2E10 /* dist in Resources */ = {isa = PBXBuildFile; fileRef = 33D767F827BF3057004D2E10 /* dist */; };
 		E07FD2792AA465EE080672F7 /* Pods_GNI18N_iOS_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C10216776D0BCD456B5AA1F /* Pods_GNI18N_iOS_Demo.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,17 +32,12 @@
 		3363488927B4F77B00355694 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		3363488A27B4F77B00355694 /* Preview Content */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Preview Content"; sourceTree = "<group>"; };
 		3363488D27B4F77B00355694 /* WebpageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebpageView.swift; sourceTree = "<group>"; };
-		3363489127B4F77B00355694 /* SecondView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		3363489127B4F77B00355694 /* NextPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextPageView.swift; sourceTree = "<group>"; };
 		3363489227B4F77B00355694 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		336348A027B4F7E000355694 /* GNConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GNConstants.swift; sourceTree = "<group>"; };
-		336348A127B4F7E000355694 /* GNText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GNText.swift; sourceTree = "<group>"; };
-		336348A227B4F7E000355694 /* GNExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GNExtensions.swift; sourceTree = "<group>"; };
-		336348A327B4F7E000355694 /* GNI18N.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GNI18N.swift; sourceTree = "<group>"; };
-		336348A427B4F7E000355694 /* GNProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GNProtocols.swift; sourceTree = "<group>"; };
 		336348AD27B4F84D00355694 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		336348AF27B4F85A00355694 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		336348B027B4F86300355694 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		338D08AD27BCE3650024CE4F /* dist */ = {isa = PBXFileReference; lastKnownFileType = folder; name = dist; path = "../../../Web/gn-i18n-vue-demo/dist"; sourceTree = "<group>"; };
+		33D767F827BF3057004D2E10 /* dist */ = {isa = PBXFileReference; lastKnownFileType = folder; name = dist; path = "../../../Web/gn-i18n-vue-demo/dist"; sourceTree = "<group>"; };
 		3C10216776D0BCD456B5AA1F /* Pods_GNI18N_iOS_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GNI18N_iOS_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84827662495A02408A85B5EF /* Pods-GNI18N-iOS-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNI18N-iOS-Demo.debug.xcconfig"; path = "Target Support Files/Pods-GNI18N-iOS-Demo/Pods-GNI18N-iOS-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		CED425752AA97CBBF9F2313F /* Pods-GNI18N-iOS-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNI18N-iOS-Demo.release.xcconfig"; path = "Target Support Files/Pods-GNI18N-iOS-Demo/Pods-GNI18N-iOS-Demo.release.xcconfig"; sourceTree = "<group>"; };
@@ -94,13 +84,12 @@
 		3363487927B4F71F00355694 /* GNI18N-iOS-Demo */ = {
 			isa = PBXGroup;
 			children = (
-				338D08AD27BCE3650024CE4F /* dist */,
+				33D767F827BF3057004D2E10 /* dist */,
 				336348AC27B4F84D00355694 /* Localizable.strings */,
-				3363489F27B4F7E000355694 /* GNI18N */,
 				3363489227B4F77B00355694 /* HomeView.swift */,
 				3363488A27B4F77B00355694 /* Preview Content */,
 				3363488927B4F77B00355694 /* ProfileView.swift */,
-				3363489127B4F77B00355694 /* SecondView.swift */,
+				3363489127B4F77B00355694 /* NextPageView.swift */,
 				3363488827B4F77B00355694 /* Utils.swift */,
 				3363488D27B4F77B00355694 /* WebpageView.swift */,
 				3363487A27B4F71F00355694 /* GNI18N_iOS_DemoApp.swift */,
@@ -117,18 +106,6 @@
 				3363488127B4F72100355694 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		3363489F27B4F7E000355694 /* GNI18N */ = {
-			isa = PBXGroup;
-			children = (
-				336348A027B4F7E000355694 /* GNConstants.swift */,
-				336348A127B4F7E000355694 /* GNText.swift */,
-				336348A227B4F7E000355694 /* GNExtensions.swift */,
-				336348A327B4F7E000355694 /* GNI18N.swift */,
-				336348A427B4F7E000355694 /* GNProtocols.swift */,
-			);
-			path = GNI18N;
 			sourceTree = "<group>";
 		};
 		BF0D158FDE853E713DF0FDA4 /* Pods */ = {
@@ -204,7 +181,7 @@
 			files = (
 				336348AE27B4F84D00355694 /* Localizable.strings in Resources */,
 				3363489527B4F77B00355694 /* Preview Content in Resources */,
-				338D08AE27BCE3650024CE4F /* dist in Resources */,
+				33D767F927BF3057004D2E10 /* dist in Resources */,
 				3363488227B4F72100355694 /* Preview Assets.xcassets in Resources */,
 				3363487F27B4F72100355694 /* Assets.xcassets in Resources */,
 			);
@@ -259,17 +236,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3363489C27B4F77B00355694 /* SecondView.swift in Sources */,
+				3363489C27B4F77B00355694 /* NextPageView.swift in Sources */,
 				3363489D27B4F77B00355694 /* HomeView.swift in Sources */,
-				336348A627B4F7E000355694 /* GNText.swift in Sources */,
 				3363489427B4F77B00355694 /* ProfileView.swift in Sources */,
 				3363489827B4F77B00355694 /* WebpageView.swift in Sources */,
 				3363487D27B4F71F00355694 /* ContentView.swift in Sources */,
-				336348A827B4F7E000355694 /* GNI18N.swift in Sources */,
-				336348A727B4F7E000355694 /* GNExtensions.swift in Sources */,
 				3363487B27B4F71F00355694 /* GNI18N_iOS_DemoApp.swift in Sources */,
-				336348A527B4F7E000355694 /* GNConstants.swift in Sources */,
-				336348A927B4F7E000355694 /* GNProtocols.swift in Sources */,
 				3363489327B4F77B00355694 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

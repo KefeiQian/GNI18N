@@ -9,7 +9,7 @@ import SwiftUI
 import SwiftyUserDefaults
 
 extension Notification.Name {
-  static let GN_LANGUAGE_CHANGED = Notification.Name("GN_LANGUAGE_CHANGED")
+  public static let GN_LANGUAGE_CHANGED = Notification.Name("GN_LANGUAGE_CHANGED")
 }
 
 var bundleKey: UInt8 = 0

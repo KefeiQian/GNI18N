@@ -2,7 +2,7 @@
 // Created by Kefei Qian on 2022/2/10.
 //
 
-import Foundation
+import GNI18N
 
 public func getRandomLangExceptCurrentLang() -> GNI18NLang {
   var randomLang = GNI18N.shared.currentLang
