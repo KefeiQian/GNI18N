@@ -1,5 +1,5 @@
 PODS:
-  - GNI18N (0.1.0):
+  - GNI18N (1.0.0):
     - SwiftyUserDefaults (~> 5.0)
     - WKWebViewJavascriptBridge (~> 1.2)
   - SwiftyUserDefaults (5.3.0)
@@ -18,7 +18,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  GNI18N: c9b0a458a2732bdd6951cad60ae71f5beb4359c5
+  GNI18N: d5d4ce216d105d59f729f3e1336ae2c7a2a9cced
   SwiftyUserDefaults: 63f80248cf5bfb3458825d9a78f2eb7e1293a040
   WKWebViewJavascriptBridge: d7324badf8996486c71648f448617b09bf927b4b
 

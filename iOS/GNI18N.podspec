@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name = "GNI18N"
-  s.version = "0.1.0"
-  s.summary = "A I18N framework for iOS hybird app."
+  s.version = "1.0.0"
+  s.summary = "An I18N framework for iOS hybird app."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,15 +18,16 @@ Pod::Spec.new do |s|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description = <<-DESC
-  A I18N framework for iOS hybird app.                     
+  The framework is used to help iOS hybrid apps(use both webkit and native) to easily complete the I18N job.                 
   DESC
 
   s.homepage = "https://github.com/KefeiQian/hybrid-mobile-app-i18n-framework"
   s.license = { :type => "MIT", :file => "LICENSE" }
   s.author = { "Kefei Qian" => "kefei.qian@hotmail.com" }
-  s.source = { :git => "https://github.com/Jozdortraz/GNI18N.git", :tag => s.version.to_s }
+  s.source = { :git => "https://github.com/KefeiQian/hybrid-mobile-app-i18n-framework.git", :tag => s.version.to_s }
 
   s.ios.deployment_target = "13.0"
+  s.swift_versions = "5.6"
 
   s.source_files = "GNI18N/Classes/**/*"
 
