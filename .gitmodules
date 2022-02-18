@@ -1,0 +1,9 @@
+[submodule "iOS"]
+	path = iOS
+	url = https://KefeiQian@github.com/KefeiQian/GNI18N-iOS.git
+[submodule "Web"]
+	path = Web
+	url = https://KefeiQian@github.com/KefeiQian/GNI18N-Web.git
+[submodule "Android"]
+	path = Android
+	url = https://KefeiQian@github.com/KefeiQian/GNI18N-Android.git
